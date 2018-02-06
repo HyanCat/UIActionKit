@@ -7,18 +7,38 @@
 //
 
 import UIKit
+import UIActionKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var actionLabel: UILabel!
+    @IBOutlet weak var buttonA: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        actionLabel.action = Action(name: "actionLabel")
+        buttonA.action = Action(name: "actionA")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc
+    override func handleAction(_ action: Action) -> Result {
+        print("handled action.")
+        return Result.end
     }
 
+    @objc(handleActionLabel:)
+    func handle(actionLabel: Action) -> Result? {
+        print("handle action label.")
+        self.actionLabel.action = nil
+        return nil
+    }
+
+    @objc(handleActionA:)
+    func handle(actionA: Action) -> Result {
+        print("handled hahah.")
+        self.buttonA.action = nil
+        return Result.end
+    }
 }
 

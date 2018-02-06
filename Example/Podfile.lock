@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - UIActionKit (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - UIActionKit (from `../`)
+
+EXTERNAL SOURCES:
+  UIActionKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  UIActionKit: 2c59db87f675299ceffd9501df91330efc0a4559
+
+PODFILE CHECKSUM: 5312ebf4a752d52d59a680303c9cbdad6cdc5a50
+
+COCOAPODS: 1.4.0
