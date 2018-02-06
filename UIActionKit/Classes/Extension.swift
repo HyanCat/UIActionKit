@@ -9,17 +9,17 @@ import Foundation
 
 // MARK: - String empty
 extension String {
-    /// Simplly check if a string is empty.
+    /// Simply check if a string is empty.
     var isEmpty: Bool {
         return self.count == 0
     }
-    /// Simplly check if a string is not empty.
+    /// Simply check if a string is not empty.
     var isNotEmpty: Bool {
         return self.count > 0
     }
 }
 
-/// Simplly check if an optional string is empty
+/// Simply check if an optional string is empty
 ///
 /// - Parameter string: the string value.
 /// - Returns: Boolean value if it is empty.
@@ -27,7 +27,7 @@ func isEmpty(string: String?) -> Bool {
     return string == nil || string!.isEmpty
 }
 
-/// Simplly check if an optional string is not empty
+/// Simply check if an optional string is not empty
 ///
 /// - Parameter string: the string value.
 /// - Returns: Boolean value if it is not empty.

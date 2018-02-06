@@ -26,4 +26,4 @@ HyanCat, hyancat@live.cn
 
 ## License
 
-UIActionKit is available under the MIT license. See the LICENSE file for more info.
+UIActionKit is available under the Apache license. See the LICENSE file for more info.
