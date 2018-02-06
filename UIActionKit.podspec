@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary          = 'An elegant way to handle UI action events in Swift.'
 
   s.description      = <<-DESC
-An elegant way to handle UI action events in Swift.
+An elegant way to handle UI action events in Swift. Inspired by UI responder chain and chain of responsibility pattern.
                        DESC
 
   s.homepage         = 'https://github.com/HyanCat/UIActionKit'
@@ -15,6 +15,7 @@ An elegant way to handle UI action events in Swift.
   s.social_media_url = 'https://twitter.com/HyanCat'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = '4.0'
 
   s.source_files = 'UIActionKit/Classes/**/*'
 
