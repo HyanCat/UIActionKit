@@ -15,7 +15,7 @@ An elegant way to handle UI action events in Swift. Inspired by UI responder cha
   s.social_media_url = 'https://twitter.com/HyanCat'
 
   s.ios.deployment_target = '8.0'
-  s.swift_version = '4.0'
+  # s.swift_version = '4.0'
 
   s.source_files = 'UIActionKit/Classes/**/*'
 
