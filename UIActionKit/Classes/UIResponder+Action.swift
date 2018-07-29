@@ -25,9 +25,9 @@ extension UIResponder {
     ///
     /// - Parameter action: The action to be dispatched.
     private func dispatch(action: Action) {
-        guard action.name.count > 0 else { return }
+        guard action.name.name.count > 0 else { return }
 
-        let specifiedSelector = Selector("handle" + action.name.uppercasedFirst + ":")
+        let specifiedSelector = Selector("handle" + action.name.name.uppercasedFirst + ":")
         let commonSelector = #selector(handleAction(_:))
         let selector: Selector = self.responds(to: specifiedSelector) ? specifiedSelector : commonSelector
         if self.responds(to: selector) {

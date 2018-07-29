@@ -8,15 +8,20 @@ DEPENDENCIES:
   - Quick (~> 1.2.0)
   - UIActionKit (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
 EXTERNAL SOURCES:
   UIActionKit:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  UIActionKit: f695c1e570e5d1b999fd75d71dd3e9a9d9e10150
+  UIActionKit: 38a7b4bdb6fe088c829681c085c2e85b3edf6e11
 
-PODFILE CHECKSUM: 5312ebf4a752d52d59a680303c9cbdad6cdc5a50
+PODFILE CHECKSUM: a67fe19febfa354c01694c42875bd17983fdec0a
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

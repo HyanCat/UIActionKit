@@ -80,7 +80,7 @@ extension ActionSender where Self: NSObject {
             }
 
             /// Register action or not, depends on the action's name.
-            if isNotEmpty(string: newValue?.name) {
+            if isNotEmpty(string: newValue?.name.name) {
                 self.registerAction()
             } else {
                 self.unregisterAction()

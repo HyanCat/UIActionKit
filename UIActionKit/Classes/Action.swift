@@ -10,8 +10,8 @@ import Foundation
 /// Define the action class.
 /// It must be subclass of NSObject for it will use the Objective-C characteristic.
 public class Action: NSObject {
-    /// The name (alse an identifier) of an action, which different from others.
-    public let name: String
+    /// The name (also an identifier) of an action, which different from others.
+    public let name: ActionName
     /// The object of an action, usually the sender of the action.
     public var object: Any?
     /// The additional infomation for the action.
@@ -19,7 +19,7 @@ public class Action: NSObject {
 
     internal var gesture: UIGestureRecognizer?
 
-    public init(name: String, object: Any? = nil, userInfo: [String: Any]? = nil) {
+    public init(name: ActionName, object: Any? = nil, userInfo: [String: Any]? = nil) {
         self.name = name
         self.object = object
         self.userInfo = userInfo

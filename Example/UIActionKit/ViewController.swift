@@ -9,6 +9,11 @@
 import UIKit
 import UIActionKit
 
+extension ActionName {
+    static let actionLabel = ActionName("actionLabel")
+    static let actionA = ActionName("actionA")
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var actionLabel: UILabel!
@@ -17,8 +22,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        actionLabel.action = Action(name: "actionLabel")
-        buttonA.action = Action(name: "actionA")
+        actionLabel.action = Action(name: ActionName.actionLabel)
+        buttonA.action = Action(name: ActionName.actionA)
     }
 
     @objc
@@ -36,8 +41,13 @@ class ViewController: UIViewController {
 
     @objc(handleActionA:)
     func handle(actionA: Action) -> Result {
-        print("handled hahah.")
-        self.buttonA.action = nil
+        if actionA.name == ActionName.actionA {
+            print("handled actionA.")
+            self.buttonA.action = nil
+        } else if actionA.name == ActionName.actionLabel {
+            print("handle action label.")
+            self.actionLabel.action = nil
+        }
         return Result.end
     }
 }
