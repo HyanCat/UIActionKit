@@ -10,8 +10,8 @@ import UIKit
 import UIActionKit
 
 extension ActionName {
-    static let actionLabel = ActionName("actionLabel")
-    static let actionA = ActionName("actionA")
+    static let actionLabel: ActionName = "actionLabel"
+    static let actionA: ActionName = "actionA"
 }
 
 class ViewController: UIViewController {

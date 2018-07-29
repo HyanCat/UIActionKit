@@ -12,7 +12,7 @@ import Foundation
 /// Usage:
 /// ```swift
 /// extension ActionName {
-///     static let exampleName1: ActionName = ActionName("exampleName1")
+///     static let exampleName1: ActionName = "exampleName1"
 /// }
 /// ```
 /// Then, we use `ActionName.exampleName1`.
@@ -37,5 +37,11 @@ extension ActionName: Equatable, Comparable {
 extension ActionName: CustomStringConvertible {
     public var description: String {
         return "UIActionKit.ActionName(\(self.name))"
+    }
+}
+
+extension ActionName: ExpressibleByStringLiteral {
+    public init(stringLiteral value: String) {
+        name = value
     }
 }
