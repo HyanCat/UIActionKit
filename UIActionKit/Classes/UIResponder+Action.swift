@@ -5,7 +5,7 @@
 //  Created by HyanCat on 05/02/2018.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Extension UIResponder to dispatch actions.
 extension UIResponder {
@@ -64,7 +64,7 @@ extension UIResponder {
     var nextActionResponder: UIResponder? {
         if self is UIViewController {
             let `self` = self as! UIViewController
-            if let navigation = self.navigationController, let index = navigation.viewControllers.index(of: self) {
+            if let navigation = self.navigationController, let index = navigation.viewControllers.firstIndex(of: self) {
                 return index > 1 ? navigation.viewControllers[index - 1] : navigation
             }
             if let parent = self.parent {

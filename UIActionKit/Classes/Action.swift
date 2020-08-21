@@ -5,7 +5,7 @@
 //  Created by HyanCat on 05/02/2018.
 //
 
-import Foundation
+import UIKit
 
 /// Define the action class.
 /// It must be subclass of NSObject for it will use the Objective-C characteristic.
